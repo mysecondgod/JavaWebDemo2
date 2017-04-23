@@ -41,7 +41,8 @@ public class ResponseDownloadDemo extends HttpServlet
 
         int len = 0;
         byte[] buffer = new byte[1024];
-        // 3.while的用法，循环读取。在编写下载文件功能时，要使用OutputStream流，避免使用PrintWriter流，因为OutputStream流是字节流，可以处理任意类型的数据，而PrintWriter流是字符流，只能处理字符数据，如果用字符流处理字节数据，会导致数据丢失。
+        // 3.while的用法，循环读取。在编写下载文件功能时，要使用OutputStream流，避免使用PrintWriter流，
+        // 因为OutputStream流是字节流，可以处理任意类型的数据，而PrintWriter流是字符流，只能处理字符数据，如果用字符流处理字节数据，会导致数据丢失。
         while ((len = in.read(buffer)) > 0)
         {
             response.getOutputStream().write(buffer, 0, len);

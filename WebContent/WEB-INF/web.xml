@@ -151,4 +151,20 @@
     <servlet-name>ResponseDownloadDemo</servlet-name>
     <url-pattern>/http/ResponseDownloadDemo</url-pattern>
   </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ResponseContypeDemo</servlet-name>
+    <url-pattern>/http/ResponseContypeDemo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ResponseImageDemo</servlet-name>
+    <servlet-class>top.mysecondgod.response.study.ResponseImageDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResponseImageDemo</servlet-name>
+    <url-pattern>/http/ResponseImageDemo</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>
