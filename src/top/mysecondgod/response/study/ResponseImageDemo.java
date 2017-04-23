@@ -49,6 +49,13 @@ public class ResponseImageDemo extends HttpServlet
         // contextPath获取的是当前类的访问路径 /javawebdemo （即上下文根）
         String contextPath = request.getContextPath();
         response.getWriter().println(contextPath);
+        // getRequestURL 获取的完整访问路径
+        // http://localhost:8080/javawebdemo/http/ResponseImageDemo
+        StringBuffer requestURL = request.getRequestURL();
+        response.getWriter().println(requestURL);
+        // getRequestURI 获取的是资源路径 /javawebdemo/http/ResponseImageDemo
+        String requestURI = request.getRequestURI();
+        response.getWriter().println(requestURI);
 
     }
 
