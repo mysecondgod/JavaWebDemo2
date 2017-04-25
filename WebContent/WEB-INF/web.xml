@@ -151,12 +151,10 @@
     <servlet-name>ResponseDownloadDemo</servlet-name>
     <url-pattern>/http/ResponseDownloadDemo</url-pattern>
   </servlet-mapping>
-  
   <servlet-mapping>
     <servlet-name>ResponseContypeDemo</servlet-name>
     <url-pattern>/http/ResponseContypeDemo</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>ResponseImageDemo</servlet-name>
     <servlet-class>top.mysecondgod.response.study.ResponseImageDemo</servlet-class>
@@ -165,6 +163,14 @@
     <servlet-name>ResponseImageDemo</servlet-name>
     <url-pattern>/http/ResponseImageDemo</url-pattern>
   </servlet-mapping>
-  
-  
+  <servlet>
+    <description></description>
+    <display-name>RequestMethodDemo</display-name>
+    <servlet-name>RequestMethodDemo</servlet-name>
+    <servlet-class>top.mysecondgod.request.study.RequestMethodDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestMethodDemo</servlet-name>
+    <url-pattern>/http/RequestMethodDemo</url-pattern>
+  </servlet-mapping>
 </web-app>
