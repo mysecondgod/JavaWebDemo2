@@ -173,4 +173,15 @@
     <servlet-name>RequestMethodDemo</servlet-name>
     <url-pattern>/http/RequestMethodDemo</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletImageDemo</display-name>
+    <servlet-name>ServletImageDemo</servlet-name>
+    <servlet-class>top.mysecondgod.servlet.study.ServletImageDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletImageDemo</servlet-name>
+    <url-pattern>/ServletImageDemo</url-pattern>
+    <url-pattern>/servlet/ServletImageDemo</url-pattern>
+  </servlet-mapping>
 </web-app>

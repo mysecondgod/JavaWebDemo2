@@ -41,7 +41,21 @@ public class ResponseImageDemo extends HttpServlet
         // // 6.将图片写给浏览器
         // ImageIO.write(image, "jpg", response.getOutputStream());
 
-        response.sendRedirect("http://mysecondgod.top");
+        // response.sendRedirect("http://mysecondgod.top");
+
+        // servletPath获取的是当前类的访问路径 /http/ResponseImageDemo （即上下文跟之后访问）
+        String servletPath = request.getServletPath();
+        response.getWriter().println(servletPath);
+        // contextPath获取的是当前类的访问路径 /javawebdemo （即上下文根）
+        String contextPath = request.getContextPath();
+        response.getWriter().println(contextPath);
+        // getRequestURL 获取的完整访问路径
+        // http://localhost:8080/javawebdemo/http/ResponseImageDemo
+        StringBuffer requestURL = request.getRequestURL();
+        response.getWriter().println(requestURL);
+        // getRequestURI 获取的是资源路径 /javawebdemo/http/ResponseImageDemo
+        String requestURI = request.getRequestURI();
+        response.getWriter().println(requestURI);
 
     }
 
